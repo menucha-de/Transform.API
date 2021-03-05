@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ivy-module version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+	<info organisation="havis/transform" module="havis/transform-api" />
+
+	<configurations>
+		<conf name="default" />
+		<conf name="module" />
+	</configurations>
+
+	<dependencies>
+		<dependency org="org/jmockit" name="jmockit" rev="${jmockit.version}" conf="default" />
+		<dependency org="org/jmockit" name="jmockit-coverage" rev="${jmockit.version}" conf="default" />
+		<dependency org="junit" name="junit" rev="${junit.version}" conf="default" />
+
+		<dependency org="org/osgi" name="org.osgi.core" rev="${osgi.version}" conf="default->default,doc" />
+	</dependencies>
+
+</ivy-module>
